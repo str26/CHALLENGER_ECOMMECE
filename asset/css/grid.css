@@ -1,0 +1,50 @@
+.contenedor {
+    width: 99%;
+    max-width: auto;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:    "header     header"
+                            "banner     banner"
+                            "productos  productos"
+                            "contacto   contacto"
+                            "footer     footer";
+}
+
+/* 
+.contenedor > div,
+.contenedor .header,
+.contenedor .productos,
+.contenedor .footer, */
+
+
+.header {
+    grid-area: header;
+}
+
+
+.iniciosesion {
+    grid-area: iniciosesion;
+}
+
+
+.banner {
+    grid-area: banner;
+}
+
+
+.productos {
+    grid-area: productos;
+}
+
+
+ .contacto {
+    grid-area: contacto;
+}
+
+
+.footer {
+    grid-area: footer;
+}
