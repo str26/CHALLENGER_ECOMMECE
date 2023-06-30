@@ -1,0 +1,32 @@
+.contenedor {
+    width: 99%;
+    max-width: auto;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:    "header                      header"
+                            "iniciosesion__container     iniciosesion__container"
+                            "contacto                    contacto"
+                            "footer                      footer";
+}
+
+
+.header {
+    grid-area: header;
+}
+
+
+.iniciosesion__container {
+    grid-area: iniciosesion__container;
+}
+
+ .contacto {
+    grid-area: contacto;
+}
+
+
+.footer {
+    grid-area: footer;
+}

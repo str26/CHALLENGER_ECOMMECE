@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/css/normalize.css">
+    <link rel="stylesheet" href="./asset/css/reset.css">
+    <link rel="stylesheet" href="./asset/css/estilosIndex.css">
+    <link rel="stylesheet" href="./asset/css/gridIndex.css">
+    <link rel="stylesheet" href="./asset/css/estilosSesion.css">
+    <link rel="stylesheet" href="./asset/css/gridSesion.css">
+    <title>e-commerce</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <header class="header">
+            <!-- <div class="heeader__contenedor"> -->
+                <div class="logo">
+                    <img class="logo__img" src="./asset/img/logo-aurogeek-removebg.png" alt="">
+                </div>
+                <div class="buscador">
+                    <input type="search" class="input" placeholder="Buscar en pagina">
+                    <button class="buscador__boton" type="submit"><i class="fa-solid fa-magnifying-glass"></i>  </button>
+                </div>
+
+                <div class="iniciosesion">
+                    <button class="iniciosesion__boton" type="submit">Iniciar sesión</button>
+                </div>  
+            <!-- </div>    -->
+        </header> 
+        
+       
+        <main class="iniciosesion__container">
+             <!--FORMULARIO INICIO SESION-->
+             <fxorm class="iniciosesion__formulario" id="formulario">
+
+                <!--Input Email-->
+                <div class="iniciosesion__formulario__email" id="grupo__email">
+                    <div class="iniciosesion__formulario__email-input">
+                        <input class="iniciosesion__input__email" type="email" name="correo" id="correo" placeholder=" Correo Electronico" required data-tipo="email">
+                        <i class="formulario__validacion-estado  fas fa-times-circle"></i>
+                    </div>
+                </div>
+
+                <!--Input Contraseña-->
+               <div class="iniciosesion__formulario__contraseña" id="grupo__nombre">
+                    <div class="iniciosesion__formulario__contraseña-input">
+                        <input type="password" class="iniciosesion__input__contraseña"  name="nombre" id="nombre" placeholder=" Contraseña" required data-tipo="nombre">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+               </div>   
+             </form> 
+            <div class="iniciosesion__boton__sesion">
+             <button type="submit" class="boton__iniciosesion" id="boton__iniciosesion">Clic Aqui</button>
+            </div>
+        </main>
+ 
+        <div class="contacto">
+
+            <section class="submenu">
+
+                <div class="submenu__img__container">
+                    <img src="./asset/img/logo-aurogeek-removebg.png" class="submenu__img" alt="logo">
+                </div>
+                <div class="submenu__items">
+                    <a class="submenu__links" href="#">Quienes Somos</a>
+                    <a class="submenu__links" href="#">Politica de Privacidad</a>
+                    <a class="submenu__links" href="#">Programa de Fidelidad</a>
+                    <a class="submenu__links" href="#">Nuestra Tienda</a>
+                    <a class="submenu__links" href="#">Productos</a>
+                    <a class="submenu__links" href="#">Anúncie aqui</a>
+                </div>
+            </section>
+
+            <section class="formulario">
+                <h4>Comunicate con nostros</h4>
+                <div class="formulario__input">
+                    <input type="text" class="formulario__input__nombre" placeholder="Nombre">
+                    <textarea class="formulario__input__mensaje" placeholder="Escribe tu mensaje aqui"  cols="40" rows="6"></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="formulario__boton"> Enviar</button>
+                </div>
+            </section>
+        </div>
+              
+        <footer class="footer">
+            <h4 class="footer__texto">por Esther Or</h4>
+            <h4 class="footer__texto">DevNurse</h4>
+        </footer>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/db26d8279e.js" crossorigin="anonymous"></script>
+</body>
+</html>
