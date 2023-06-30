@@ -34,6 +34,7 @@
 
 
 .iniciosesion__input__email  {
+    width: 90%;
     min-width: 275px;
     max-width: 600px; 
     min-height: 33px;
@@ -52,6 +53,7 @@
 
 
 .iniciosesion__input__contraseña {
+    width: 90%;
     min-width: 275px;
     max-width: 463px; 
     min-height: 33px;
@@ -67,7 +69,7 @@
     font-size: 16px;
     font-weight: 600;
     padding: 10px;
-    width: 25vw;
+    width: 10vw;
     min-width: 150px;
     height: auto;
     border-radius: 5px;
