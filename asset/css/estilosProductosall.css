@@ -4,7 +4,7 @@
 
 .productos {
     /* padding: 20px; */
-    margin: 0px 150px;
+    margin: 0px 110px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
