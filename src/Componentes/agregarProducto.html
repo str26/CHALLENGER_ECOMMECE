@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/asset/css/normalize.css">
+    <link rel="stylesheet" href="/asset/css/reset.css">
+    <link rel="stylesheet" href="/asset/css/estilosIndex.css">
+    <link rel="stylesheet" href="/asset/css/gridIndex.css">
+    <link rel="stylesheet" href="/asset/css/estilosAgregarProducto.css">
+    <link rel="stylesheet" href="/asset/css/gridAgregarProducto.css">
+    <title>e-commerce</title>
+</head>
+
+<body>
+    <div class="contenedor">
+
+    <!------------- HEADER -------------->  
+
+        <header class="header">
+                <div class="logo">
+                    <a href="/src/index.html">
+                        <img class="logo__img" src="/asset/img/logo-aurogeek-removebg.png" alt="">
+                    </a>
+                </div>
+                <div class="buscador">
+                    <input type="search" class="input" placeholder="Buscar en pagina">
+                    <button class="buscador__boton" type="submit"><i class="fa-solid fa-magnifying-glass"></i>  </button>
+                </div>
+
+                <nav class="menuAdministrador">
+                    <a href="productosall.html">
+                    <button class="menuAdministrador__boton" type="menu" >Menu Administrador</button>
+                    </a>
+                </nav>  
+           
+        </header> 
+        
+       
+        <main class="iniciosesion__container">
+
+    <!------------- PANEL DE AGREGAR PRODUCTO -------------->  
+
+             <form class="iniciosesion__formulario" id="formulario">
+
+                <!--Input URL producto-->
+                <div class="agreProducto__Formulario" id="urlProducto">
+                    <div>
+                        <input class="agreProducto__input" type="text" name="cateProducto" id="cateProducto" placeholder="Url del Producto" required data-tipo="text">
+                        <i class="formulario__validacion-estado  fas fa-times-circle"></i>
+                    </div>
+                </div>
+                <!--Input Categoria-->
+                <div class="agreProducto__Formulario" id="cateProducto">
+                    <div>
+                        <input class="agreProducto__input" type="text" name="cateProducto" id="cateProducto" placeholder="Categoria Producto" required data-tipo="text">
+                        <i class="formulario__validacion-estado  fas fa-times-circle"></i>
+                    </div>
+                </div>
+                <!--Input Nombre de Producto-->
+                <div class="agreProducto__Formulario" id="nomProducto">
+                    <div>
+                        <input class="agreProducto__input" type="text" name="cateProducto" id="cateProducto" placeholder="Nombre del Producto" required data-tipo="text">
+                        <i class="formulario__validacion-estado  fas fa-times-circle"></i>
+                    </div>
+                </div>
+                <!--Input Precio del Producto-->
+                <div class="agreProducto__Formulario" id="preProducto">
+                    <div>
+                        <input class="agreProducto__input" type="text" name="cateProducto" id="cateProducto" placeholder="Precio del Producto" required data-tipo="text">
+                        <i class="formulario__validacion-estado  fas fa-times-circle"></i>
+                    </div>
+                </div>
+
+               
+                <!--Input Descripcion del producto-->
+                <div class="agreProducto__Formulario" id="descProducto">
+                    <div>
+                        <textarea class="agreProducto__input__mensaje" placeholder="Descripcion del Producto"  cols="40" rows="6"></textarea>
+                        <i class="formulario__validacion-estado  fas fa-times-circle"></i>
+                    </div>
+                </div>
+               
+             </form> 
+            <div class="iniciosesion__boton__sesion">
+                <a href="productosall.html">
+                   <button type="submit" class="boton__agreProducto" id="agreProducto">AGREGAR PRODUCTO</button>
+                </a>
+            </div>
+        </main>
+
+
+   <!------------- PANEL DE CONTACTO Y SUBMENU -------------->  
+ 
+        <div class="contacto">
+
+            <section class="submenu">
+
+                <div class="submenu__img__container">
+                    <img src="/asset/img/logo-aurogeek-removebg.png" class="submenu__img" alt="logo">
+                </div>
+                <div class="submenu__items">
+                    <a class="submenu__links" href="#">Quienes Somos</a>
+                    <a class="submenu__links" href="#">Politica de Privacidad</a>
+                    <a class="submenu__links" href="#">Programa de Fidelidad</a>
+                    <a class="submenu__links" href="#">Nuestra Tienda</a>
+                    <a class="submenu__links" href="#">Productos</a>
+                    <a class="submenu__links" href="#">Anúncie aqui</a>
+                </div>
+            </section>
+
+            <section class="formulario">
+                <h4>Comunicate con nostros</h4>
+                <div class="formulario__input">
+                    <input type="text" class="formulario__input__nombre" placeholder="Nombre">
+                    <textarea class="formulario__input__mensaje" placeholder="Escribe tu mensaje aqui"  cols="40" rows="6"></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="formulario__boton"> Enviar</button>
+                </div>
+            </section>
+        </div>
+              
+
+    <!------------- PANEL FOOTER -------------->  
+
+        <footer class="footer">
+            <h4 class="footer__texto">por Esther Or</h4>
+            <h4 class="footer__texto">DevNurse</h4>
+        </footer>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/db26d8279e.js" crossorigin="anonymous"></script>
+</body>
+</html>
