@@ -1,0 +1,32 @@
+.contenedor {
+    width: 99%;
+    max-width: auto;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:    "header             header"
+                            "tabla__listado     tabla__listado"
+                            "contacto           contacto"
+                            "footer             footer";
+}
+
+
+.header {
+    grid-area: header;
+}
+
+
+.tabla__listado {
+    grid-area: tabla__listado;
+}
+
+ .contacto {
+    grid-area: contacto;
+}
+
+
+.footer {
+    grid-area: footer;
+}
