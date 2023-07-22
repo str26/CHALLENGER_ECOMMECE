@@ -1,19 +1,29 @@
 {
-  "posts": [
+  "perfil": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "nombre": "julia",
+      "email": "julia@correo.comr",
+      "id": "1"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "nombre": "alex",
+      "email": "alex@correo.coom",
+      "id": "b72a63b4-850b-40ac-a095-e0a161ffc183"
+    },
+    {
+      "nombre": "carlosa",
+      "email": "cperez@correo.com",
+      "id": "a472670d-0798-44d4-9228-09a828c8cb36"
+    },
+    {
+      "nombre": "andres",
+      "email": "perez@correo.com",
+      "id": "7a892ea7-7dea-47f8-8fba-8b27c0cec361"
+    },
+    {
+      "nombre": "luis",
+      "email": "perez@correo.com",
+      "id": "f2d0c83c-b268-4a2b-9337-98472ce2e996"
     }
-  ],
-  "perfil": {
-    "name": "typicode"
-  }
+  ]
 }

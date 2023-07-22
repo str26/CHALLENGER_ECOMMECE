@@ -39,27 +39,32 @@
 
         <main class="iniciosesion__container">
              <!--FORMULARIO INICIO SESION-->
-             <form class="iniciosesion__formulario" id="formulario">
+             <form class="iniciosesion__formulario" id="formulario" data-form>
 
-                <!--Input Email-->
-                <div class="iniciosesion__formulario__email" id="grupo__email">
+                <!--Input Nombre-->
+                <div class="iniciosesion__formulario__email" id="grupo__nombre">
                     <div class="iniciosesion__formulario__email-input">
-                        <input class="iniciosesion__input__email" type="email" name="correo" id="correo" placeholder=" Correo Electronico" required data-tipo="email">
+                        <input class="iniciosesion__input__email" type="text" name="nombre" id="nombre"  
+                            placeholder="Editar Nombre Completo" required data-nombre>
                         <i class="formulario__validacion-estado  fas fa-times-circle"></i>
                     </div>
                 </div>
 
-                <!--Input Contraseña-->
-               <div class="iniciosesion__formulario__contraseña" id="grupo__nombre">
+                <!--Input Correo -->
+               <div class="iniciosesion__formulario__contraseña" id="grupo__email">
                     <div class="iniciosesion__formulario__contraseña-input">
-                        <input type="password" class="iniciosesion__input__contraseña"  name="nombre" id="nombre" placeholder=" Contraseña" required data-tipo="nombre">
+                        <input type="email" class="iniciosesion__input__contraseña"  name="correo" id="correo" 
+                            placeholder=" Editar Correo Electronico" required data-email>
                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
                     </div>
                </div>   
+               <div class="iniciosesion__boton__sesion">
+                <button type="submit" class="boton__iniciosesion" id="boton__registrar">Actualizar</button>
+                <button type="menu" class="boton__iniciosesion" id="boton__registrar"><a href="../componentes/listadoClientes.html"></a>Lista de Clientes</button>
+
+               </div>
              </form> 
-            <div class="iniciosesion__boton__sesion">
-             <button type="submit" class="boton__iniciosesion" id="boton__iniciosesion">Registrarse</button>
-            </div>
+           
         </main>
  
 
@@ -89,7 +94,7 @@
                     <textarea class="formulario__input__mensaje" placeholder="Escribe tu mensaje aqui"  cols="40" rows="6"></textarea>
                 </div>
                 <div>
-                    <button type="submit" class="formulario__boton"> Enviar</button>
+                    <button type="submit" class="formulario__boton"> Registrar </button>
                 </div>
             </section>
         </div>
@@ -102,8 +107,8 @@
             <h4 class="footer__texto">DevNurse</h4>
         </footer>
     </div>
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="../controllers/actualizar-controller.js"></script>
     <script src="https://kit.fontawesome.com/db26d8279e.js" crossorigin="anonymous"></script>
 </body>
 </html>
