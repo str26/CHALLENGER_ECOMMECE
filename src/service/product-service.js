@@ -1,20 +1,25 @@
 
-//-----PROMESA UNA SOLA LINEA ----- //
+// ---- LISTA DE PRODUCTOS
 
-const listaClientes = () => 
-fetch("http://localhost:3000/perfil").then(respuesta => respuesta.json());
+const listaProductos = () => 
+fetch("http://localhost:3000/productos").then(respuesta => respuesta.json());
 
 
-const crearCliente = (nombre, email, password) => {
-   return fetch("http://localhost:3000/perfil", {
+
+//--- CREAR PRODUCTO
+const crearProducto = (nombre, precio, imagen, id) => {
+   return fetch("http://localhost:3000/productos", {
         method: "POST",
         headers: {
             "Content-Type" : "application/json"
         },
 
-        body: JSON.stringify({nombre, email, password, id: uuid.v4()}),
+        body: JSON.stringify({nombre, precio, imagen, id: uuid.v4()}),
     });
 };
+
+
+//--- ELIMINAR PRODUCTOS
 
 const eliminarCliente = (id) => {
     console.log("Eliminar --> ", id)
@@ -28,6 +33,8 @@ const detalleCLiente = (id) => {
 }
 
 
+//-----ACTIUALIZAR PRODUCTOS
+
 const actualizarCliente = (nombre, email, id) => {
     return fetch(`http://localhost:3000/perfil/${id}`, {
       method: "PUT",
@@ -40,9 +47,12 @@ const actualizarCliente = (nombre, email, id) => {
       .catch((err) => console.log(err));
   };
 
-export const clientServices = {
-    listaClientes,
-    crearCliente,
+
+  //-- EXPORTAR SERVICIOS
+
+export const productServices = {
+    listaProductos,
+    crearProducto,
     eliminarCliente,
     detalleCLiente,
     actualizarCliente,

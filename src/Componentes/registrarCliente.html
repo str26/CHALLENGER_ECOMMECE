@@ -30,7 +30,9 @@
                 </div>
 
                 <div class="iniciosesion">
+                    <a href="../componentes/inicioSesion.html" class="iniciosesion__boton__link">
                     <button class="iniciosesion__boton" type="submit">Iniciar sesión</button>
+                   </a>
                 </div>  
         </header> 
         
@@ -38,33 +40,43 @@
     <!------------- PANEL INICIO DE SESION -------------->  
 
         <main class="iniciosesion__container">
-             <!--FORMULARIO INICIO SESION-->
-             <form class="iniciosesion__formulario" id="formulario" data-form>
+            <!--FORMULARIO INICIO SESION-->
+            <form class="iniciosesion__formulario" id="formulario" data-form>
 
                 <!--Input Nombre-->
                 <div class="iniciosesion__formulario__email" id="grupo__nombre">
                     <div class="iniciosesion__formulario__email-input">
                         <input class="iniciosesion__input__email" type="text" name="nombre" id="nombre"  
-                            placeholder="Nombre Completo" required data-nombre>
+                            placeholder="Nombre Completo"  data-nombre>
                         <i class="formulario__validacion-estado  fas fa-times-circle"></i>
                     </div>
                 </div>
 
                 <!--Input Correo -->
-               <div class="iniciosesion__formulario__contraseña" id="grupo__email">
-                    <div class="iniciosesion__formulario__contraseña-input">
+                <div class="iniciosesion__formulario__contraseña" id="grupo__email">
+                <div class="iniciosesion__formulario__contraseña-input">
                         <input type="email" class="iniciosesion__input__contraseña"  name="correo" id="correo" 
-                            placeholder=" Correo Electronico" required data-email>
+                            placeholder=" Correo Electronico"  data-email>
                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
                     </div>
-               </div>   
-               <div class="iniciosesion__boton__sesion">
-                <button type="submit" class="boton__iniciosesion" id="boton__registrar">Registrarse</button>
-               </div>
-             </form> 
-           
+                </div>   
+
+                    <!--Input Contraseña-->
+                <div class="iniciosesion__formulario__contraseña" id="grupo__nombre">
+                    <div class="iniciosesion__formulario__contraseña-input">
+                        <input type="password" class="iniciosesion__input__contraseña"  name="password" id="password" placeholder=" Contraseña" minlength="6" maxlength="12"  
+                            pattern="^(([a-zA-Z]+\d+)|(\d+[a-zA-Z]+))[a-zA-Z0-9]*$" title="Al menos 6 caracteres, máximo 12, debe contener una letra 
+                            minúscula, una letra mayúscula, un número y no puede contener caracteres especiales." data-password>
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                </div>
+
+                <div class="iniciosesion__boton__sesion">
+                    <button type="submit" class="boton__iniciosesion" id="boton__registrar">Registrarse</button>
+                </div>
+            </form>      
         </main>
- 
+    </div> 
 
    <!------------- PANEL DE CONTACTO Y SUBMENU -------------->  
 

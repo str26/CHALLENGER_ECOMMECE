@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/asset/css/reset.css">
     <link rel="stylesheet" href="/asset/css/estilosIndex.css">
     <link rel="stylesheet" href="/asset/css/gridIndex.css">
-    <link rel="stylesheet" href="/asset/css/estilosSesion.css">
+    <link rel="stylesheet" href="/asset/css/estilosEditarCliente.css">
     <link rel="stylesheet" href="/asset/css/gridSesion.css">
     <title>e-commerce</title>
 </head>
@@ -31,7 +31,19 @@
 
                 <div class="iniciosesion">
                     <button class="iniciosesion__boton" type="submit">Iniciar sesión</button>
+                    <div class="dropdown iniciosesion__boton__link">
+                        <button class="iniciosesion__boton">Menu Administrador</button>
+                        <div class="dropdown-content">
+                        <a href="./agregarProducto.html">Agregar Producto</a>
+                        <a href="./listadoClientes.html">Listado de Clientes</a>
+                        <a href="./productosAll.html">Todos los productos</a>
+                        <a href="../index.html">Inicio</a>
+                        <a href="../index.html">Contacto</a>
+                        </div>
+                      </div>
                 </div>  
+
+                
         </header> 
         
     
@@ -60,8 +72,8 @@
                </div>   
                <div class="iniciosesion__boton__sesion">
                 <button type="submit" class="boton__iniciosesion" id="boton__registrar">Actualizar</button>
-                <button type="menu" class="boton__iniciosesion" id="boton__registrar"><a href="../componentes/listadoClientes.html"></a>Lista de Clientes</button>
-
+                <a href="../componentes/listadoClientes.html" class="boton_listadoClientes" id="botonregistrar">Lista de Clientes</a>
+                
                </div>
              </form> 
            

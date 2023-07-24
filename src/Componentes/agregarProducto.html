@@ -29,17 +29,17 @@
                     <button class="buscador__boton" type="submit"><i class="fa-solid fa-magnifying-glass"></i>  </button>
                 </div>
 
-           <nav class="menuAdministrador">
-                    
-                    <a href="productosall.html">
-                    <button class="menuAdministrador__boton" type="menu" >Menu Administrador</button>
-                    </a>
-                <select>
-                        <option value="Todos los productos">Todos los productos</option>
-                        <option value="lista de clientes registrados"><a href="./listadoClientes.html">lista de clientes registrados</a></option>
-                    </select>
-                </nav>  
-           
+                <div class="dropdown iniciosesion__boton__link">
+                    <button class="iniciosesion__boton">Menu Administrador</button>
+                    <div class="dropdown-content">
+                    <a href="./agregarProducto.html">Agregar Producto</a>
+                    <a href="./listadoClientes.html">Listado de Clientes</a>
+                    <a href="./productosAll.html">Todos los productos</a>
+                    <a href="../index.html">Inicio</a>
+                    <a href="../index.html">Contacto</a>
+                    </div>
+                  </div>
+                  
         </header> 
         
        
@@ -47,33 +47,33 @@
 
         <main class="iniciosesion__container">
 
-             <form class="iniciosesion__formulario" id="formulario">
+             <form class="iniciosesion__formulario" id="formulario" data-formq>
 
                 <!--Input URL producto-->
                 <div class="agreProducto__Formulario" id="urlProducto">
                     <div>
-                        <input class="agreProducto__input" type="text" name="cateProducto" id="cateProducto" placeholder="Url del Producto" required data-tipo="text">
+                        <input class="agreProducto__input" type="text" name="cateProducto" id="cateProducto" placeholder="Url del Producto"  data-imagen="">
                         <i class="formulario__validacion-estado  fas fa-times-circle"></i>
                     </div>
                 </div>
                 <!--Input Categoria-->
                 <div class="agreProducto__Formulario" id="cateProducto">
                     <div>
-                        <input class="agreProducto__input" type="text" name="cateProducto" id="cateProducto" placeholder="Categoria Producto" required data-tipo="text">
+                        <input class="agreProducto__input" type="text" name="cateProducto" id="cateProducto" placeholder="Categoria Producto" data-categoria="">
                         <i class="formulario__validacion-estado  fas fa-times-circle"></i>
                     </div>
                 </div>
                 <!--Input Nombre de Producto-->
                 <div class="agreProducto__Formulario" id="nomProducto">
                     <div>
-                        <input class="agreProducto__input" type="text" name="cateProducto" id="cateProducto" placeholder="Nombre del Producto" required data-tipo="text">
+                        <input class="agreProducto__input" type="text" name="cateProducto" id="cateProducto" placeholder="Nombre del Producto" required data-nombre>
                         <i class="formulario__validacion-estado  fas fa-times-circle"></i>
                     </div>
                 </div>
                 <!--Input Precio del Producto-->
                 <div class="agreProducto__Formulario" id="preProducto">
                     <div>
-                        <input class="agreProducto__input" type="text" name="cateProducto" id="cateProducto" placeholder="Precio del Producto" required data-tipo="text">
+                        <input class="agreProducto__input" type="text" name="cateProducto" id="cateProducto" placeholder="Precio del Producto" required data-precio>
                         <i class="formulario__validacion-estado  fas fa-times-circle"></i>
                     </div>
                 </div>
@@ -89,7 +89,7 @@
                
              </form> 
             <div class="iniciosesion__boton__sesion">
-                <a href="productosall.html">
+                <a href="productosCard.html">
                    <button type="submit" class="boton__agreProducto" id="agreProducto">AGREGAR PRODUCTO</button>
                 </a>
             </div>

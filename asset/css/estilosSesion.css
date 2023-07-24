@@ -14,7 +14,10 @@
     flex-direction: column;
 }
 
+.titulo__inicioSesion {
+    text-align: center;
 
+}
 .iniciosesion__formulario {
     display: flex;
     flex-direction: column;
@@ -76,8 +79,6 @@
     border-radius: 5px;
     text-align: center;
 }
-
-
 
 
 

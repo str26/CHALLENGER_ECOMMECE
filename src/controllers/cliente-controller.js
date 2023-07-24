@@ -1,5 +1,5 @@
 
-import {clientServices} from "../service/cliente-service.js";
+import {productServices} from "../service/product-service";
 
 console.log(clientServices)
 
@@ -35,12 +35,9 @@ const crearNuevaLinea = (nombre, email, id) => {
             .catch((err) => alert("Ocurrio un error"));
      //console.log("el click", id)
     });  
-
     return linea;
 };
 
-// <p class="tabla__nuevoCliente-i"><i class="fa-regular fa-trash-can"></i>
-// <i class="fa-solid fa-user-pen"></i></p>
 
 const table = document.querySelector("[data-table]");
 
