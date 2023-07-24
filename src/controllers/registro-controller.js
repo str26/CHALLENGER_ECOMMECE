@@ -1,5 +1,5 @@
 
-import { productServices } from "../service/product-service.js";
+import { productServices } from "../service/producto-service.js";
 
 
 const formulario = document.querySelector("[data-form]");

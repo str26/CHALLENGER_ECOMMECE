@@ -1,5 +1,5 @@
 
-import {productServices} from "../service/product-service";
+import {productServices} from "../service/producto-service";
 
 console.log(clientServices)
 

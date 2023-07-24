@@ -1,8 +1,7 @@
-
-import {productServices} from "../service/product-service";
+import { productServices } from "../service/producto-service";
 
 const crearNuevaLinea = (nombre, precio, imagen, id) => {
-    console.log(id)
+
     const linea = document.createElement("div");
     const contenido =    ` 
             <div>
@@ -22,11 +21,9 @@ const crearNuevaLinea = (nombre, precio, imagen, id) => {
                 console.log(respuesta)
         })  
             .catch((err) => alert("Ocurrio un error"));
-     //console.log("el click", id)
     });  
     return linea;
 };
-
 
 const table = document.querySelector("[data-table]");
 
