@@ -1,21 +1,35 @@
-import { clientServices } from "../service/cliente-service.js";
+import { productServices } from "../service/producto-service.js";
 
 const formulario = document.querySelector("[data-form]");
 
-const obtenerInformacion = async () => {
+const obtenerInformacion = async() => {
     const url = new URL(window.location);
     const id = url.searchParams.get("id");
-    
+
     if (id === null) {
-        window.location.href = "../componentes/errorGeneral.html";
+        alert("hubo un error, intenta de nuevo")
+        //window.location.href = "../componentes/errorGeneral.html";
       }
 
     const nombre = document.querySelector("[data-nombre]");
-    const email = document.querySelector("[data-email]");
-    const perfil = await clientServices.detalleCLiente(id);
-    nombre.value = perfil.nombre;
-    email.value = perfil.email;
-};
+    const precio = document.querySelector("[data-precio");
+    const imagen = document.querySelector("[data-imagen]");
+ 
+
+  try {
+    const producto = await productServices.detalleProducto(id);
+    if (producto.nombre && producto.precio && producto.imagen) {
+        nombre.value = producto.nombre;
+        precio.value = producto.precio;
+        imagen.value = producto.imagen;
+      } else {
+        throw new Error();
+      }
+    } catch (error) {
+        alert("hubo un error, intenta de nuevo")
+      
+    }
+  };
 
 
 obtenerInformacion();
@@ -24,19 +38,14 @@ formulario.addEventListener("submit", (evento) => {
     evento.preventDefault();
     const url = new URL(window.location);
     const id = url.searchParams.get("id");
-    
-   
+
+
     const nombre = document.querySelector("[data-nombre]").value;
-    const email = document.querySelector("[data-email]").value;
-    console.log(nombre," - ", email);
+    const precio = document.querySelector("[data-precio]").value;
+    const imagen = document.querySelector("[data-imagen]").value;
+    console.log(nombre, ", ", precio)
 
-    clientServices.actualizarCliente(nombre, email, id)
-        // .then(() => alert("edicion completada"))
-        .then(() =>  {
-            alert("Actualizacion completada");
-            // //  console.log("alert")    
-            window.location.replace("http://127.0.0.1:5500/src/componentes/listadoClientes.html");   
-            console.log("rediccionar")    
+    productServices.actualizarProducto(nombre, precio, imagen, id)
+        .then(() => alert("Actualizacion completada")
 
-    });
-});
+)});

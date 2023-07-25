@@ -1,10 +1,11 @@
 
-import { productServices } from "../service/producto-service";
+import { productServices } from "../service/producto-service.js";
 
 
 const formulario = document.querySelector("[data-form]");
 
 formulario.addEventListener("submit", (event) => {
+  console.log("hello")
   event.preventDefault();//ayuda a que no se recargue la pagina inmediatamente que seria el comportamiento normal del evento submit
   
   const nombre = document.querySelector("[data-nombre]").value;
@@ -13,7 +14,7 @@ formulario.addEventListener("submit", (event) => {
   
   productServices
     .crearProducto(nombre, precio, imagen)
-    .then(() => alert('Producto Agregado'))
+    .then((response) => console.log(response))
     .catch((err) => console.log(err));
    
 });

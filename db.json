@@ -1,11 +1,6 @@
 {
   "perfil": [
     {
-      "nombre": "carlosa",
-      "email": "cperez@correo.com",
-      "id": "a472670d-0798-44d4-9228-09a828c8cb36"
-    },
-    {
       "nombre": "andres",
       "email": "perez@correo.com",
       "id": "7a892ea7-7dea-47f8-8fba-8b27c0cec361"
@@ -43,14 +38,30 @@
       "id": "99d20f92-80c3-404d-808e-488654411196"
     }
   ],
-
-  
   "productos": [
-      {
-        "nombre": "Torta1",
-        "precio": "5000",
-        "imagen": "",
-        "id": "a472670d-0798-44d4-9228-09a828c8cb36"
-      }
-    ]
+    {
+      "nombre": "Torta1",
+      "precio": "1000",
+      "imagen": "http://placekitten.com/200/200",
+      "id": "1"
+    },
+    {
+      "nombre": "Torta2",
+      "precio": "3000",
+      "imagen": "http://placekitten.com/200/200",
+      "id": "2"
+    },
+    {
+      "nombre": "Torta4",
+      "precio": "7000",
+      "imagen": "http://placekitten.com/200/200",
+      "id": "a472670d-0798-44d4-9228-09a828c8cb36"
+    },
+    {
+      "nombre": "torta12",
+      "precio": "789654",
+      "imagen": "https://www.floristeriadfranco.com/200/200/536-large_default/mini-torta-cali-.jpg",
+      "id": "6785a0dd-ed51-4767-a8e0-4e76bceca707"
+    }
+  ]
 }

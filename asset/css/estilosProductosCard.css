@@ -86,13 +86,6 @@
     font-size: 14px;
 }
 
-.imagen__productos{
-  width: 200px;
-  max-width: 200px;
-  height: 200px;
-  max-height: 200px;
-}
-
 .producto__precio{
     margin-top: 10px;
     margin-bottom: 10px;
@@ -100,6 +93,8 @@
     font-weight: 600;
     font-size: 16px;
 }
+
+
 
 .productos__gridvideos__videos {
     line-height: 12px;

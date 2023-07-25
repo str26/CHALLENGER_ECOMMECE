@@ -7,44 +7,44 @@ fetch("http://localhost:3000/productos").then(respuesta => respuesta.json());
 
 
 //--- CREAR PRODUCTO
-const crearProducto = (nombre, precio, imagen, id) => {
+const crearProducto = (nombre, precio, imagen) => {
    return fetch("http://localhost:3000/productos", {
         method: "POST",
         headers: {
             "Content-Type" : "application/json"
         },
 
-        body: JSON.stringify({nombre, precio, imagen, id: uuid.v4()}),
+        body: JSON.stringify({nombre, precio, imagen, id: uuid.v4() }),
     });
 };
 
 
 //--- ELIMINAR PRODUCTOS
 
-const eliminarCliente = (id) => {
+const eliminarProducto = (id) => {
     console.log("Eliminar --> ", id)
-    return fetch(`http://localhost:3000/perfil/${id}`, {
+    return fetch(`http://localhost:3000/productos/${id}`, {
         method: "DELETE",
     })
 }
 
-const detalleCLiente = (id) => {
-    return fetch(`http://localhost:3000/perfil/${id}`).then(respuesta => respuesta.json())
+const detalleProducto = (id) => {
+    return fetch(`http://localhost:3000/productos/${id}`).then(respuesta => respuesta.json())
 }
 
 
 //-----ACTIUALIZAR PRODUCTOS
 
-const actualizarCliente = (nombre, email, id) => {
-    return fetch(`http://localhost:3000/perfil/${id}`, {
+const actualizarProducto = (nombre, precio, imagen, id) => {
+    return fetch(`http://localhost:3000/productos/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ nombre, email }),
+      body: JSON.stringify({ nombre, precio, imagen }),
     })
       .then((respuesta) => respuesta)
-      .catch((err) => console.log(err));
+      .catch((err) => err);
   };
 
 
@@ -53,9 +53,9 @@ const actualizarCliente = (nombre, email, id) => {
 export const productServices = {
     listaProductos,
     crearProducto,
-    eliminarCliente,
-    detalleCLiente,
-    actualizarCliente,
+    eliminarProducto,
+    detalleProducto,
+    actualizarProducto,
   };
 
 
